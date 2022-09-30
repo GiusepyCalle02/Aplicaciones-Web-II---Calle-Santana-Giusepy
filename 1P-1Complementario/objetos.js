@@ -1,3 +1,6 @@
+//A continuación se declara el arreglo curso que es la entidad designada
+// y se le añade como objetos los atributos a continuación
+
 const curso = [
     {
         id:1,
@@ -27,6 +30,10 @@ const curso = [
 
 ]
 
+
+//A continuación se declara el arreglo aspirante que es otra de las 
+//entidades designadas y se le añade como objetos los atributos a continuación
+
 const aspirante = [
     {
         id:11,
@@ -54,6 +61,10 @@ const aspirante = [
         identificacion: "1319"
     }
 ]
+
+
+//A continuación se declara el arreglo inscripcion que es otra de las 
+//entidades designadas y se le añade como objetos los atributos a continuación
 
 const inscripcion = [
     {
@@ -111,6 +122,9 @@ for(let elemento of comidas)
     }
 */
 
+
+//A continuación exportamos los 3 arreglos utilizados
+//los cuales serán utilizados en el archivo funciones.js
 export {
     curso,
     aspirante,
