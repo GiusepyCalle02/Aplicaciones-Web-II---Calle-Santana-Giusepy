@@ -25,21 +25,21 @@ function findInscripcionForId(id, callback){
 }
 
 
-findInscripcionForId(333, (err,inscripcion)=>{
+findAspiranteForId(3, (err,aspirante)=>{
     if (err)
     {
         console.log(err.message);
         return;
     }
     // console.log(book)
-    findAspiranteForId( inscripcion.idAspirante, ( err, aspirante )=>{
+    findInscripcionForId( aspirante.idInscripcion, ( err, inscripcion )=>{
         if (err)
         {
             return console.log(err.message);
         }
-        inscripcion.aspirante= aspirante; 
-        delete inscripcion.idAspirante;
-        console.log(inscripcion);
+        aspirante.inscripcion= inscripcion; 
+        delete aspirante.idInscripcion;
+        console.log(aspirante);
 
     } )
 })

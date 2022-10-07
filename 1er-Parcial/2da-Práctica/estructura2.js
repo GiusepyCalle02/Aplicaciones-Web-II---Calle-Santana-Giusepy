@@ -28,7 +28,7 @@ async function findInscripcionForId(id){
 (async ()=>{
     try
     {
-        const aspirante  =   await findAspiranteForId(44);
+        const aspirante  =   await findAspiranteForId(1);
         const inscripcion =   await  findInscripcionForId(aspirante.id);
         aspirante.inscripcion = inscripcion;
         console.log(aspirante)
