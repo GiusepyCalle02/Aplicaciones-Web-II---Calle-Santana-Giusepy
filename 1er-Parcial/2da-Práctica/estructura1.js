@@ -42,7 +42,7 @@ findAspiranteForId(3, (err,aspirante)=>{
         console.log(err.message);
         return;
     }
-    // console.log(book)
+    
     findInscripcionForId( aspirante.idInscripcion, ( err, inscripcion )=>{
         if (err)
         {
