@@ -1,3 +1,6 @@
+//A continuación se declara el arreglo aspirantes que es una de las 
+//entidades designadas y se le añade como objetos los atributos a continuación
+
 const aspirantes = [
     {
         id:1,
@@ -32,6 +35,9 @@ const aspirantes = [
 ]
 
 
+//A continuación se declara el arreglo inscripciones que sería la entidad transaccional
+//y se le añade como objetos los atributos a continuación
+
 const inscripciones = [
     {
         id:1,
@@ -65,6 +71,10 @@ const inscripciones = [
     },
 ]
 
+
+//A continuación exportamos los 2 arreglos utilizados
+//los cuales serán utilizados en los archivos estructura1.js
+//para callback y estructura2.js para Async Await
 
 export {
     aspirantes,

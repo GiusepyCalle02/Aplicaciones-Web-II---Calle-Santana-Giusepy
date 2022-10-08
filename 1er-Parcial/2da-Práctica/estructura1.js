@@ -1,5 +1,12 @@
+//A continuación importamos los 2 arreglos que se encuentran
+//en el archivo datos.js lo que nos permitirá atraer sus datos
+//y poderlos utilizar en la estructura callback para que se muestren en consola
+
 import {aspirantes, inscripciones} from './datos.js';
 
+
+//Aquí utilizamos como una función la estructura callback para buscar
+//por id un aspirante del arreglo que tenemos
 
 function findAspiranteForId(id, callback  ){
     const aspirante = aspirantes.find((aspirante)=> aspirante.id===id );
@@ -11,6 +18,10 @@ function findAspiranteForId(id, callback  ){
     }
     return callback(null, aspirante );
 }
+
+//Aquí utilizamos como una función la estructura callback para buscar
+//por id la inscripcion de un aspirante del arreglo que tenemos
+
 function findInscripcionForId(id, callback){
     const inscripcion =  inscripciones.find((inscripcion)=>{
         return inscripcion.id===id;
